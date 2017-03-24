@@ -2,7 +2,7 @@
  var webpack = require('webpack');
 
  module.exports = {
-     entry: './js/main.js',
+     entry: './main.js',
      output: {
          path: path.resolve(__dirname, 'build'),
          filename: 'main.bundle.js'
@@ -13,7 +13,7 @@
                  test: /\.js$/,
                  loader: 'babel-loader',
                  query: {
-                     presets: ['es2015']
+                     presets: ['es2015', 'react']
                  }
              }
          ]
